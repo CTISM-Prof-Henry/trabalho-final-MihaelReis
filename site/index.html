@@ -1,12 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta viewport="width=device-width, initial-scale=1.0">
-    <title>Minha primeira página HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
-    <p>Esta é a minha primeira página HTML.</p>
+
+<header>
+    <nav>
+        <h1>Portfólio Profissional</h1>
+
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="images/Foto-portfolio.png" alt="Foto de Perfil">
+
+    <h2>Vitor Mihael Ferreira Reis</h2>
+
+    <p>Estudante de Técnico Informática Para Internet</p>
+
+    <button onclick="mostrarMensagem()">
+        Saiba Mais
+    </button>
+
+    <p id="mensagem"></p>
+</section>
+
+<section id="sobre" class="card">
+    <h2>Sobre Mim</h2>
+
+    <p>
+        Trabalho na parte de infraestrutura com formação em TI e eletricidade Predial, buscando aprendizado na área de programação.
+    </p>
+</section>
+
+<section id="habilidades" class="card">
+    <h2>Habilidades</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>C</li>
+    </ul>
+</section>
+
+<section id="projetos" class="card">
+    <h2>Projetos</h2>
+
+    <div class="projeto">
+        <h3>Projeto 1</h3>
+        <p>Desenvolvimento de um site HTML com CSS e JS</p>
+    </div>
+
+    <div class="projeto">
+        <h3>Projeto 2</h3>
+        <p>Em breve...</p>
+    </div>
+
+    <div class="projeto">
+        <h3>Projeto 3</h3>
+        <p>Em breve...</p>
+    </div>
+</section>
+
+<<section id="contato" class="card">
+    <h2>Contato</h2>
+
+    <p>
+        Email:
+        <a href="mailto:mihaelwork2004@gmail.com">
+            mihaelwork2004@gmail.com
+        </a>
+    </p>
+
+    <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/vitor-reis-1a0387390" target="_blank">
+            linkedin.com/in/vitor-reis
+        </a>
+    </p>
+
+    <p>
+        GitHub:
+        <a href="https://github.com/MihaelReis" target="_blank">
+            github.com/MihaelReis
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 - Meu Portfólio</p>
+</footer>
+
+<script src="js/index.js"></script>
+
 </body>
 </html>
